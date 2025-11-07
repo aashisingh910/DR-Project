@@ -78,7 +78,7 @@ const HowItWorksPage = () => {
           {/* Eye anatomy diagram */}
           <div className="mt-10 flex justify-center">
   <img
-    src="src/assets/6.png"
+    src="/6.png"
     alt="Eye Anatomy Diagram"
     className="max-w-md w-full rounded-lg shadow-md border border-border"
   />
@@ -138,7 +138,7 @@ const HowItWorksPage = () => {
           {/* Add DR stage diagram */}
           <div className="flex justify-center mb-12">
             <img
-              src="src/assets/4.png"
+              src="/4.png"
               alt="DR Classification Stages"
               className="max-w-4xl w-full rounded-lg shadow-md border border-border"
             />
@@ -176,7 +176,7 @@ const HowItWorksPage = () => {
           {/* Add DR retina diagram */}
           <div className="flex justify-center">
             <img
-              src="src/assets/3.jpg"
+              src="/3.jpg"
               alt="DR Retina Diagram"
               className="max-w-lg w-full rounded-2xl shadow-lg border border-border"
             />
