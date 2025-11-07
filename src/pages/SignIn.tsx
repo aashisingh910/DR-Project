@@ -103,7 +103,7 @@ export default function SignIn() {
           <div className="w-full max-w-lg text-center space-y-8">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="src/assets/1.jpg"
+                src="1.jpg"
                 alt="Diabetic Retinopathy Progression"
                 className="w-full h-auto"
               />
