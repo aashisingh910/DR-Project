@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const CTA = () => {
   return (
@@ -17,27 +19,31 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center mb-12">
-            <Button 
-              size="xl" 
-              variant="secondary"
-              className="group shadow-xl hover:shadow-2xl"
-            >
-              Start Free Trial
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              size="xl" 
-              variant="outline"
-              className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Mail className="w-5 h-5" />
-              Contact Sales Team
-            </Button>
+         <Link to="/classify">
+  <Button 
+    size="xl" 
+    variant="secondary"
+    className="group shadow-xl hover:shadow-2xl"
+  >
+    Get Started Now
+    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+  </Button>
+</Link>
+           <Link to="/contact">
+  <Button 
+    size="xl" 
+    variant="outline"
+    className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+  >
+    <Mail className="w-5 h-5" />
+    Contact Sales Team
+  </Button>
+</Link>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 text-primary-foreground/90">
             <div>
-              <div className="text-3xl font-bold mb-2">24/7</div>
+              <div className="text-3xl font-bold mb-2">24/7 Complete </div>
               <div className="text-sm">Expert Support</div>
             </div>
             <div>
@@ -45,7 +51,7 @@ const CTA = () => {
               <div className="text-sm">Money-Back Guarantee</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">Free</div>
+              <div className="text-3xl font-bold mb-2">Free Installation </div>
               <div className="text-sm">Setup & Training</div>
             </div>
           </div>

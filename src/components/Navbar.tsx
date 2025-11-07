@@ -3,6 +3,9 @@ import { Eye, Menu } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -31,9 +34,9 @@ const Navbar = () => {
             <button onClick={() => navigate('/dashboard')} className="text-foreground hover:text-primary transition-colors">
               Dashboard
             </button>
-            <a href="#features" className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => navigate('/study1')} className="text-foreground hover:text-primary transition-colors">
               Features
-            </a>
+            </button>
             <button onClick={() => navigate('/Working')} className="text-foreground hover:text-primary transition-colors">
               Working
             </button>
@@ -41,8 +44,8 @@ const Navbar = () => {
           
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" onClick={() => navigate('/sign-in')}>Sign In</Button>
-            <Button variant="default" onClick={() => navigate('/analysis')}>
-              Get Started
+            <Button variant="default" onClick={() => navigate('/contact')}>
+              Contact Us
             </Button>
           </div>
           
@@ -66,17 +69,17 @@ const Navbar = () => {
               <button onClick={() => { navigate('/dashboard'); setIsOpen(false); }} className="text-foreground hover:text-primary transition-colors text-left">
                 Dashboard
               </button>
-              <a href="#features" className="text-foreground hover:text-primary transition-colors">
+              <button onClick={() => { navigate('/study1'); setIsOpen(false); }} className="text-foreground hover:text-primary transition-colors text-left">
                 Features
-              </a>
+              </button>
               <button onClick={() => { navigate('/how-it-works'); setIsOpen(false); }} className="text-foreground hover:text-primary transition-colors text-left">
                 How It Works
               </button>
               
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button variant="ghost" className="w-full" onClick={() => { navigate('/sign-in'); setIsOpen(false); }}>Sign In</Button>
-                <Button variant="default" className="w-full" onClick={() => { navigate('/analysis'); setIsOpen(false); }}>
-                  Get Started
+                <Button variant="default" className="w-full" onClick={() => { navigate('/contact'); setIsOpen(false); }}>
+                  Contact Us
                 </Button>
               </div>
             </div>
