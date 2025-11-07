@@ -18,6 +18,7 @@ import Footer from "./components/Footer";
 import ChatBot from "./components/chatbot";
 import Study1 from "./pages/study1";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
