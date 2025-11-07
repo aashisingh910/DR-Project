@@ -208,7 +208,7 @@ const Analysis = () => {
                 onClick={handleStartAnalysis}
                 className="mt-6 bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-full shadow-lg"
               >
-                Start AI Analysis
+                Start Diabetic Retinopathy Analysis
               </motion.button>
             </motion.div>
           )}
@@ -239,7 +239,7 @@ const Analysis = () => {
               className="mt-10 bg-white rounded-2xl shadow-lg p-10 border text-left"
             >
               <h2 className="text-3xl font-bold mb-4 text-blue-700">
-                AI Analysis Report
+                Diabetic Retinopathy Analysis Report
               </h2>
 
               {/* Overlay Section */}
