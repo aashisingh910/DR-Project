@@ -47,7 +47,7 @@ const HowItWorksPage = () => {
     <main className="min-h-screen bg-gradient-to-b from-background via-background to-primary/10">
       <div className="flex justify-center mt-12">
   <a
-    href="/introduction" // 👉 replace with your actual route or section ID
+    href="/introduction"
     className="
       group relative inline-flex items-center justify-center 
       px-10 py-6 text-2xl font-bold 

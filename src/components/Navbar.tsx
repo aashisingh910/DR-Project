@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/introduction")}
             className="flex items-center gap-2 cursor-pointer"
           >
             <div className="p-2 bg-primary/10 rounded-lg">

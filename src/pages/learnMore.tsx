@@ -55,7 +55,7 @@ const DRLearnMorePage = () => {
           </div>
 
           <motion.img
-            src="src/assets/DR12.png"
+            src="DR12.png"
             alt="Global Diabetes Map"
             className="mx-auto mt-16 rounded-2xl shadow-lg border border-blue-100 w-full max-w-3xl"
             whileHover={{ scale: 1.02 }}
