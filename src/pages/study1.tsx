@@ -38,7 +38,7 @@ const Study: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Automated Diabetic Retinopathy Detection using Deep Learning
+            Learning based system for Automated Screening of Diabetic Retinopathy
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Advanced image processing and convolutional neural networks for early detection 
