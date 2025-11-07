@@ -5,7 +5,7 @@ const steps = [
     icon: Upload,
     title: "1. Upload Image",
     description: "Securely upload fundus images in standard formats (JPEG, PNG, or DICOM). Each image is encrypted and processed anonymously.",
-    stat: "100% HIPAA Compliant",
+    stat: "100% DR Screening",
   },
   {
     icon: Scan,

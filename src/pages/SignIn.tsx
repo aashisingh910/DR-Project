@@ -16,30 +16,32 @@ import { InfoIcon } from "lucide-react";
 export default function SignIn() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
-    age: "",
     email: "",
-    phone: "",
+    password: "",
   });
 
   const [error, setError] = useState("");
 
+  // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Basic validation
-    if (!formData.name || !formData.age || !formData.email || !formData.phone) {
+
+    // Required fields check
+    if (!formData.email || !formData.password) {
       setError("Please fill in all fields");
       return;
     }
-    // Here you would typically handle the sign-in logic
+
+    // TODO: Add actual authentication logic here
     console.log("Form submitted:", formData);
-    // Navigate to dashboard after successful sign-in
-    navigate("/dashboard");
+
+    // Navigate to patient dashboard
+    navigate("/patientDashboard");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setError(""); // Clear error when user starts typing
+    setError("");
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -53,9 +55,7 @@ export default function SignIn() {
         <Card className="w-full max-w-md">
           <CardHeader className="space-y-1">
             <CardTitle className="text-2xl font-bold">Patient Sign In</CardTitle>
-            <CardDescription>
-              Enter your details to access your account
-            </CardDescription>
+            <CardDescription>Enter your details to access your dashboard</CardDescription>
           </CardHeader>
           <CardContent>
             {error && (
@@ -64,31 +64,6 @@ export default function SignIn() {
               </Alert>
             )}
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder="John Doe"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="age">Age</Label>
-                <Input
-                  id="age"
-                  name="age"
-                  type="number"
-                  placeholder="25"
-                  min="0"
-                  max="150"
-                  value={formData.age}
-                  onChange={handleChange}
-                  className="w-full"
-                />
-              </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <Input
@@ -102,13 +77,13 @@ export default function SignIn() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
+                <Label htmlFor="password">Password</Label>
                 <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="+1 (555) 000-0000"
-                  value={formData.phone}
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter password"
+                  value={formData.password}
                   onChange={handleChange}
                   className="w-full"
                 />
@@ -139,14 +114,12 @@ export default function SignIn() {
               </h2>
               <p className="text-muted-foreground">
                 Early detection through regular screening is crucial in preventing
-                vision loss from diabetic retinopathy. Our AI-powered system helps
-                identify signs of the condition at its earliest stages.
+                vision loss. Our AI-powered system helps identify signs at early stages.
               </p>
               <Alert className="bg-primary/10 border-primary/20">
                 <InfoIcon className="h-4 w-4 text-primary" />
                 <AlertDescription className="text-sm text-primary ml-2">
-                  Regular eye examinations are essential for diabetic patients to
-                  monitor retinal health.
+                  Regular eye examinations are essential for diabetic patients.
                 </AlertDescription>
               </Alert>
             </div>

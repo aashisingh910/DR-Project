@@ -21,6 +21,8 @@ import Study2 from "./pages/study2";
 import Study3 from "./pages/study3";
 import Study4 from "./pages/study4";
 import Study5 from "./pages/study5";
+import PatientSignIn from "./pages/patientDashboard";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -48,6 +50,7 @@ const App = () => (
               <Route path="/study4" element={<Study4 />} />
               <Route path="/study5" element={<Study5 />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/patientDashboard" element={<PatientSignIn />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
