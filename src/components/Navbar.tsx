@@ -87,7 +87,7 @@ const Navbar = () => {
               onClick={() => navigate("/ModelWorking")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Model Working
+              Working Flow
               </button>
           </div>
 
@@ -163,7 +163,7 @@ const Navbar = () => {
                 }}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
-                Model Working
+                Working Flow
               </button>
 
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
