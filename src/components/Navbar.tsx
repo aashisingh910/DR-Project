@@ -81,8 +81,14 @@ const Navbar = () => {
               onClick={() => navigate("/Working")}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Working
+              About DR
             </button>
+            <button
+              onClick={() => navigate("/ModelWorking")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Model Working
+              </button>
           </div>
 
           {/* Auth Buttons */}
@@ -148,7 +154,16 @@ const Navbar = () => {
                 }}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
-                Working
+                About DR
+              </button>
+               <button
+                onClick={() => {
+                  navigate("/ModelWorking");
+                  setIsOpen(false);
+                }}
+                className="text-foreground hover:text-primary transition-colors text-left"
+              >
+                Model Working
               </button>
 
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
