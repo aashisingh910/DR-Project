@@ -32,7 +32,7 @@ const Navbar = () => {
               Home
             </button>
             <button
-              onClick={() => navigate("/classify")}
+              onClick={() => navigate("/DRanalysis")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Analysis
@@ -84,7 +84,7 @@ const Navbar = () => {
               About DR
             </button>
             <button
-              onClick={() => navigate("/ModelWorking")}
+              onClick={() => navigate("/flow")}
               className="text-foreground hover:text-primary transition-colors"
             >
               Working Flow
@@ -122,7 +122,7 @@ const Navbar = () => {
               </button>
               <button
                 onClick={() => {
-                  navigate("/classify");
+                  navigate("/DRanalysis");
                   setIsOpen(false);
                 }}
                 className="text-foreground hover:text-primary transition-colors text-left"
@@ -158,7 +158,7 @@ const Navbar = () => {
               </button>
                <button
                 onClick={() => {
-                  navigate("/ModelWorking");
+                  navigate("/flow");
                   setIsOpen(false);
                 }}
                 className="text-foreground hover:text-primary transition-colors text-left"

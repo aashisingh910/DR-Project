@@ -11,7 +11,7 @@ import SignIn from "./pages/SignIn";
 import AboutDR from "./pages/Working";
 import DRIntroduction from "./pages/introduction";
 import DRLearnMorePage from "./pages/learnMore";
-import Analysis from "./pages/classify";
+import Analysis from "./pages/DRanalysis";
 import Contact from "./pages/contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -22,7 +22,7 @@ import Study3 from "./pages/study3";
 import Study4 from "./pages/study4";
 import Study5 from "./pages/study5";
 import PatientSignIn from "./pages/patientDashboard";
-import ModelWorking from "./pages/ModelWorking";
+import ModelWorking from "./pages/flow";
 
 const queryClient = new QueryClient();
 
@@ -44,7 +44,7 @@ const App = () => (
               <Route path="/Working" element={<AboutDR />} />
               <Route path="/introduction" element={<DRIntroduction />} />
               <Route path="/learnMore" element={<DRLearnMorePage />} />
-              <Route path="/classify" element={<Analysis />} />
+              <Route path="/DRanalysis" element={<Analysis />} />
               <Route path="/study1" element={<Study1 />} />
               <Route path="/study2" element={<Study2 />} />
               <Route path="/study3" element={<Study3 />} />
@@ -52,7 +52,7 @@ const App = () => (
               <Route path="/study5" element={<Study5 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/patientDashboard" element={<PatientSignIn />} />
-              <Route path="/ModelWorking" element={<ModelWorking />} />
+              <Route path="/flow" element={<ModelWorking />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
